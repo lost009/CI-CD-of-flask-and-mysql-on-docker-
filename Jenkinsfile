@@ -8,7 +8,7 @@ pipeline {
               git url: "https://github.com/lost009/flask-and-mysql-on-docker- , branch: "master"
             }
         }
-        stage("build Test") {
+        stage("build and  Test") {
             steps { 
                 sh "sudo docker build -t flask . "
             }
